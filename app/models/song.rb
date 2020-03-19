@@ -8,5 +8,6 @@ class Song < ActiveRecord::Base
 
   def drake_made_this
     self.artist = Artist.new(name: "Drake")
+    binding.pry
   end
 end
